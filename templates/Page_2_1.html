@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Data Page
+</title>
+</head>
+
+<body>
+<h1 style="font-size:60px; text-align:center">
+<img src="../static/tcm logo3.png" width="160" height="160" alt="Eashvar's Logo">
+伊什瓦尔中医学院网站
+<a href="{{ url_for('log_out') }}">Log Out</a> <!--goes to page 6--><!--add a flask function-->
+</h1>
+
+<h2>
+<form style="text-align:center">
+	<a href="{{ url_for('patient_data') }}">Patient Data</a><br><br> <!--goes to page 3-->
+	<a href="{{ url_for('staff_data') }}">Staff Data</a><br><br> <!--goes to page 4-->
+	<a href="{{ url_for('clinic_data') }}">Clinic Data</a><br><br> <!--goes to page 5-->
+	<a href="{{ url_for('add_data') }}">Enter new Data</a> <!--goes to page 7-->
+</form>	
+</h2>
+
+<h3>
+<p style="font-size:20px; text-align:center">欢迎{{ fn }} {{ ln }}来到伊什瓦尔中医学院门户网站</p> <!--keys in staff name into XXXX-->
+</h3>
+</html>

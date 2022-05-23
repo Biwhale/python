@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Main Page
+</title>
+</head>
+
+<body>
+<h1 style="font-size:60px; text-align:center">
+<img src="../static/tcm logo3.png" width="160" height="160" alt="Eashvar's Logo">
+伊什瓦尔中医学院网站
+</h1>
+
+<h2 style = "font-size:30px; text-align:center">
+只供职员使用！
+</h2>
+
+<h3 style = "font-size:30px; text-align:center">
+<form action = "{{ url_for('home_valid') }}" method = "POST">
+	<label for="NRIC">NRIC:</label>
+	<input type="text" id="nric" name="nric" required><br><br>
+	<label for="Clinic">Clinic:</label>
+	<input type="text" id="clinic" name="clinic" required><br><br>
+	<input type="submit" value="Enter">
+</form>
+</h3>
+<!--if valid, go to page 2.1-->
+<!--if either nric and clinic are invalid, go to page 2.2-->
+</html>

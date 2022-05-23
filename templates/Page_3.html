@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Patient Data Main Page
+</title>
+</head>
+
+<body>
+<h1 style="font-size:60px; text-align:center">
+<img src="../static/tcm logo3.png" width="160" height="160" alt="Eashvar's Logo">
+伊什瓦尔中医学院病人资料
+</h1>	
+
+<h2 style="font-size:30px; text-align:center">
+<form action = "{{ url_for('patient_data_entry') }}" method = "POST"> <!--goes to page 3.1 or 3.2-->
+	<label for="NRIC">Enter NRIC:</label>
+	<input type="text" id="nric" name="nric=" required><br><br>
+	<input type="submit" value="Enter">
+</form>
+
+<h3 style="float: left; margin-left: 300px;">
+<form action = "{{ url_for('patient_data_return1') }}" method = "POST"> <!--EASHVAR CODE THIS 4.0--> <!--goes to page 2.1-->
+	<input type="submit" value="Return to Data Page">
+</form>
+</h3>
+</html>

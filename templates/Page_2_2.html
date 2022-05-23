@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Data Invalid Page
+</title>
+</head>
+
+<body>
+<h1 style="font-size:60px; text-align:center">
+<img src="../static/tcm logo3.png" width="160" height="160" alt="Eashvar's Logo">
+伊什瓦尔中医学院网站
+</h1>
+
+<h2>
+<p style="font-size:20px; text-align:center">
+错NRIC或错Clinic
+</h2>
+
+<h3 style="text-align:center">
+<img src="../static/sad_doctor.png" width="160" height="140" alt="Sad Doctor Error Message">
+</h3>
+
+<h4 style="text-align:center">
+<form action = "{{ url_for('home_invalid') }}" method = "POST"> <!--EASHVAR CODE THIS goes to page 1-->
+	<input type="submit" value="Retry">
+</form>
+</h4>
+</html>

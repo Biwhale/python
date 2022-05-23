@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Patient Data Return Page
+</title>
+</head>
+
+<body>
+<h1 style="font-size:60px; text-align:center">
+<img src="../static/tcm logo3.png" width="160" height="160" alt="Eashvar's Logo">
+伊什瓦尔中医学院病人资料
+</h1>
+
+<h2 style="font-size:30px; text-align:center">
+<pre>
+First Name: {{ fn }}
+Last Name: {{ ln }}
+Date of Birth: {{ dob }}
+Home Address: {{ ha }}
+Contact Number: {{ cn }}
+Gender: {{ g }}
+Type: {{ t }}
+Allergy: {{ a }}
+</pre>
+</h2>
+
+<h3 style="float: left; margin-left: 300px;">
+<form action = "{{ url_for('patient_data_return2') }}" method = "POST"> <!--EASHVAR CODE THIS 7.0--> <!--goes to page 2.1-->
+	<input type="submit" value="Return">
+</h3>
+</html>
+<!--<pre>
+First Name: {{ fn }}
+Last Name: {{ ln }}
+Date of Birth: {{ dob }}
+Home Address: {{ ha }}
+Contact Number: {{ cn }}
+Gender: {{ g }}
+Type: {{ t }}
+Allergy: {{ a }}
+</pre>-->

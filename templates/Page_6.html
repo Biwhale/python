@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Log Out Page
+</title>
+</head>
+
+<body>
+<h1 style="font-size:60px; text-align:center">
+<img src="../static/tcm logo3.png" width="160" height="160" alt="Eashvar's Logo">
+伊什瓦尔中医学院网站
+</h1>
+
+<h2>
+<p style="font-size:20px; text-align:center">
+谢谢你的使用伊什瓦尔中医学院网站XXXX!<!-- XXXX is the staff name-->
+</h2>
+
+<h3 style="text-align:center">
+<img src="../static/happy_doctor.png" width="200" height="180" alt="Sad Doctor Error Message">
+</h3>
+
+<h4 style="float: left; margin-left: 300px;">
+<form action = "{{url_for('logout_to_front')}}" method = "POST"> <!--EASHVAR CODE THIS 15.0 goes to page 1-->
+	<input type="submit" value="Return to Main Page">
+</form>
+</h4>
+</html>

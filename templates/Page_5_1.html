@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Clinic Data Return Page
+</title>
+</head>
+
+<body>
+<h1 style="font-size:60px; text-align:center">
+<img src="../static/tcm logo3.png" width="160" height="160" alt="Eashvar's Logo">
+伊什瓦尔中医学院临床数据
+</h1>
+
+<h2 style="font-size:20px; text-align:center">
+<pre>
+Clinic: {{ clinic }}
+Clinic Address: {{ clinic_add }}
+Clinic Contact: {{ clinic_con }} <!--EASHVAR CODE THESE 11.0-->
+</pre>
+</h2>
+
+<h3>
+<table style="fontsize:8px; text-align:center" border='2', width='60%' align='center'>
+	<tr>
+		<th>Clinic</th>
+		<th>NRIC</th>
+		<th>Type</th>
+	</tr>
+	{% for i in row1 %} <!--EASHVAR CODE THIS 12.0-->
+	<tr>
+		<td>{{ row1[i][0] }}</td>
+		<td>{{ row1[i][2] }}</td>
+		<td>{{ row1[i][1] }}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+<h4 style="float: left; margin-left: 300px;">
+<form action = "{{ url_for('clinic_data_return1') }}" method = "POST"> <!--EASHVAR CODE THIS 13.0--> <!--goes to page 2.1-->
+	<input type="submit" value="Return to Data Page">
+</form>
+</h4>
+</html>
